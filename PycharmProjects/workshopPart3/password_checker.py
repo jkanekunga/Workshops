@@ -1,5 +1,5 @@
 
-#----jkanekunga-----------
+#----jkanekunga 2016-----------
 #Password Checker Program with Loops
 
 PASSWORD_MIN_LENGTH = 5
