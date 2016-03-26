@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../MyCP5632WorkShops/.idea/MyCP5632WorkShops.iml" filepath="$PROJECT_DIR$/../MyCP5632WorkShops/.idea/MyCP5632WorkShops.iml" />
       <module fileurl="file://$PROJECT_DIR$/../lectureExercises/.idea/lectureExercises.iml" filepath="$PROJECT_DIR$/../lectureExercises/.idea/lectureExercises.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/workshopPart1.iml" filepath="$PROJECT_DIR$/.idea/workshopPart1.iml" />
       <module fileurl="file://$PROJECT_DIR$/../workshopPart2/.idea/workshopPart2.iml" filepath="$PROJECT_DIR$/../workshopPart2/.idea/workshopPart2.iml" />
