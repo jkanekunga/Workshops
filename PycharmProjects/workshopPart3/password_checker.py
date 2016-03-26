@@ -8,7 +8,7 @@ pwd_length_test = False
 lCase_test = False
 uCase_test = False
 sp_char_test = False
-
+digit_test = False
 condition_not_met = True
 str_heading = """
 Please enter a valid password
@@ -24,6 +24,10 @@ while condition_not_met:
     if len(password) >= PASSWORD_MIN_LENGTH and len(password) <= PASSOWRD_MAX_LENGTH:
         pwd_length_test = True
 
+    for char in password:
+        if char.isdigit():
+            digit_test = True
+
     for letter in password:
         if letter.islower():
             lCase_test = True
@@ -34,13 +38,15 @@ while condition_not_met:
         if char in SPECIAL_CHARACTER:
             sp_char_test = True
 
-    if pwd_length_test is False or lCase_test is False or uCase_test is False or sp_char_test is False:
+    if pwd_length_test and digit_test and lCase_test and uCase_test and sp_char_test:
+        print("Your {} character password is {}".format(len(password), password), sep='')
+        condition_not_met = False
+    else:
         print('Invalid password!')
         condition_not_met = True
         #input('>')
-    else:
-        print("Your {} character password is {}".format(len(password), password), sep='')
-        condition_not_met = False
+        #jk
+
 
 
 
