@@ -11,7 +11,12 @@ INITIAL_PRICE = 10.0
 #INITIAL_DAY = 0
 price = INITIAL_PRICE
 day = 0
-print("The starting price: ${:,.2f}".format(price))
+
+def format_curency(val):
+        return '${:,.2f}'.format(val)
+
+#print("The starting price: ${:,.2f}".format(price))
+print("The starting price:", format_curency(price))
 
 while price >= MIN_PRICE and price <= MAX_PRICE:
     priceChange = 0
@@ -27,5 +32,6 @@ while price >= MIN_PRICE and price <= MAX_PRICE:
         priceChange = random.uniform(-MAX_DECREASE, 0)
     price *= (1 + priceChange)
     day += 1
-    print("On day {} price is: ${:,.2f}".format(day, price))
+    #print("On day {} price is: ${:,.2f}".format(day, price))
+    print("On day {} price is:".format(day),format_curency(price))
 
