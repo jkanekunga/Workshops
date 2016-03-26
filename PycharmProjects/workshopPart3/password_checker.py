@@ -1,4 +1,6 @@
-#Password Checker Program
+
+#----jkanekunga-----------
+#Password Checker Program with Loops
 
 PASSWORD_MIN_LENGTH = 5
 PASSOWRD_MAX_LENGTH = 15
@@ -44,8 +46,7 @@ while condition_not_met:
     else:
         print('Invalid password!')
         condition_not_met = True
-        #input('>')
-        #jk
+
 
 
 
