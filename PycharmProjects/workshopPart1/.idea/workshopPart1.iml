@@ -8,6 +8,7 @@
     <orderEntry type="module" module-name="workshopPart3" />
     <orderEntry type="module" module-name="lectureExercises" />
     <orderEntry type="module" module-name="MyCP5632WorkShops" />
+    <orderEntry type="module" module-name="workshopPart4" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />
