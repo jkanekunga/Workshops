@@ -54,7 +54,7 @@ function return_item()
             display returned confirmation
             update item list
         else
-            display error message
+            display error message_test
 
 function add_item()
     get item choice
