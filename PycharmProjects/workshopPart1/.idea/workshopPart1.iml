@@ -9,6 +9,9 @@
     <orderEntry type="module" module-name="lectureExercises" />
     <orderEntry type="module" module-name="MyCP5632WorkShops" />
     <orderEntry type="module" module-name="workshopPart4" />
+    <orderEntry type="module" module-name="workshopPart5" />
+    <orderEntry type="module" module-name="PractiseWork" />
+    <orderEntry type="module" module-name="Assignments" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

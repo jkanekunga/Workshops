@@ -1,14 +1,16 @@
 
-lower = 10
-upper = 100
+def main():
 
-#print("Enter a number (" + str(lower) + "-­‐" + str(upper) + "):")
-min_number = int(input("Enter starting number ({} - {}):".format(lower, upper).strip()))
-max_number = int(input("Enter ending number ({} - {}):".format(lower, upper).strip()))
-step_numb = int(input("Enter number to step ({} - {}):".format(lower, upper).strip()))
+    get_number("10", "200")
+    for i in range(10, 200,11): # make sure we have integers of different 'length'
+        print("{} {:>5s}".format(i, chr(i)))
 
+def get_number(lower, upper):
+    number = input("Enter a number between ({} - {}):")
 
-for i in range(min_number, max_number,step_numb): # make sure we have integers of different 'length'
-    print("{} {:>5s}".format(i, chr(i)))
+    if number < lower or number > upper or number.isdecimal():
+        print("Invalid number!")
+        number = input("Enter a number between ({} - {}):")
+    return int(number)
+main()
 
-#def get_number(lower, upper):

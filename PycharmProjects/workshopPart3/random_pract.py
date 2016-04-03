@@ -24,7 +24,7 @@ while price >= MIN_PRICE and price <= MAX_PRICE:
     # if it's 1, the price increases, otherwise it decreases
     if random.randint(1, 2) == 1:
     # generate a random floating-­‐point number
-    # between 0 and MAX_INCREASE
+    # between 0
         priceChange = random.uniform(0, MAX_INCREASE)
     else:
     # generate a random floating-­‐point number
