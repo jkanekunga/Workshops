@@ -54,7 +54,7 @@ function return_item()
             display returned confirmation
             update item list
         else
-            display error message_test
+            display error message
 
 function add_item()
     get item choice
@@ -72,3 +72,15 @@ function add_item()
     else
         display error message
 """
+
+print("Items for Hire - By John Kanekunga")
+
+INPUT_FILE = open("c:\\items.csv", "r")
+rows = list(INPUT_FILE)
+totalrows = len(rows)
+print("{} items loaded from items.csv".format(totalrows))
+INPUT_FILE.close()
+
+print("Menu:\n(L)ist all items\n(H)ire an item\n(R)eturn an item\n(A)dd an item\n(Q)uit")
+choice = input(">>>").upper()
+
