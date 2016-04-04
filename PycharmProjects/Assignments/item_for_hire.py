@@ -117,7 +117,7 @@ def list_item():
     input_file = open(FILE_PATH, "r")
     r = input_file.read()
     print(r)
-    input_file.close()
+    input_file.close()#..
 
 def hire_item():
     print("Item hired!")
