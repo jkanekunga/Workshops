@@ -14,7 +14,7 @@ function main()
     choice to upper()
     while choice is not 'Q'
         if choice is 'L'
-            display instructions
+            call list_item()
             display menu
         else if choice is 'H'
             call hire_item()
@@ -28,6 +28,11 @@ function main()
         get choice
     print farewell message
 
+function list_items()
+    open file
+    read file
+    store in listview
+    format and display
 
 function hire_item()
     for every line in file
@@ -75,12 +80,54 @@ function add_item()
 
 print("Items for Hire - By John Kanekunga")
 
-INPUT_FILE = open("c:\\items.csv", "r")
-rows = list(INPUT_FILE)
+FILE_PATH = "c:\\items.csv"
+read_file = open(FILE_PATH, "r")
+rows = list(read_file)
 totalrows = len(rows)
 print("{} items loaded from items.csv".format(totalrows))
-INPUT_FILE.close()
+read_file.close()
 
 print("Menu:\n(L)ist all items\n(H)ire an item\n(R)eturn an item\n(A)dd an item\n(Q)uit")
-choice = input(">>>").upper()
+
+def main():
+
+    choice = input(">>>").upper()
+    while choice != "Q":
+        if choice == "L":
+            list_item()
+            break
+        elif choice == "H":
+            hire_item()
+            break
+        elif choice == "R":
+            return_item()
+            break
+        elif choice == "A":
+            add_item()
+            break
+        else:
+            print("Invalid input!")
+            print("Menu:\n(L)ist all items\n(H)ire an item\n(R)eturn an item\n(A)dd an item\n(Q)uit")
+            choice = input(">>>").upper()
+
+    print("Good Bye!")
+
+def list_item():
+
+    input_file = open(FILE_PATH, "r")
+    r = input_file.read()
+    print(r)
+    input_file.close()
+
+def hire_item():
+    print("Item hired!")
+
+def return_item():
+    print("Item returned!")
+
+def add_item():
+    print("Item added")
+
+main()
+
 
